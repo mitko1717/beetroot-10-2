@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "font8f2be703781ed1f073f2d5eaea006304";
+
+  src: url("https://nomail.com.ua/files/eot/8f2be703781ed1f073f2d5eaea006304.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://nomail.com.ua/files/woff/8f2be703781ed1f073f2d5eaea006304.woff")
+      format("woff"),
+    url("https://nomail.com.ua/files/woff2/8f2be703781ed1f073f2d5eaea006304.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "fontc9064bf904221c68cbdaf2b237b18cb2";
+
+  src: url("https://nomail.com.ua/files/eot/c9064bf904221c68cbdaf2b237b18cb2.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://nomail.com.ua/files/woff/c9064bf904221c68cbdaf2b237b18cb2.woff")
+      format("woff"),
+    url("https://nomail.com.ua/files/woff2/c9064bf904221c68cbdaf2b237b18cb2.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: local("Lato-Light"),
+    url("https://nomail.com.ua/files/woff/c9064bf904221c68cbdaf2b237b18cb2.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: local("Lato-Bold"),
+    url("https://nomail.com.ua/files/woff/8f2be703781ed1f073f2d5eaea006304.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "fontdc0abed64c61c0c1ddd3f30f4aeb3ba4";
+
+  src: url("https://nomail.com.ua/files/eot/dc0abed64c61c0c1ddd3f30f4aeb3ba4.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://nomail.com.ua/files/woff/dc0abed64c61c0c1ddd3f30f4aeb3ba4.woff")
+      format("woff"),
+    url("https://nomail.com.ua/files/woff2/dc0abed64c61c0c1ddd3f30f4aeb3ba4.woff2")
+      format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 1170px;
+  height: 736px;
+  background: rgba(217, 54, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+  margin-bottom: 60px;
+}
+
+.header__title {
+  height: 40px;
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+}
+
+.header__pic {
+  justify-content: center;
+  display: flex;
+  height: 4px;
+  position: relative;
+  top: -5px;
+}
+
+.header__subtitle {
+  width: 561px;
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  width: 269px;
+  height: 267px;
+  transition: all 0.5s linear;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__front {
+  width: 100%;
+  height: 100%;
+}
+
+.card__back {
+  width: 100%;
+  height: 100%;
+  background-color: #00aed9;
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.social-media__items {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-media__item {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.social-media__item:hover {
+  cursor: pointer;
+  background-color: #00aed9;
+}
+
+.human {
+  margin-top: 20px;
+  color: #646464;
+  font-family: Lato;
+  line-height: 18px;
+  text-align: left;
+}
+.human__name {
+  color: #282528;
+  font-family: "Lato - Bold";
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.human__job {
+  font-family: "Lato Light";
+  font-weight: 300;
+}
